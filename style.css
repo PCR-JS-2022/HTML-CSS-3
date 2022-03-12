@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body > main {
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 30px 45px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    column-gap: 50px;
+}
+
+section:first-child > div:first-child {
+    width: 320px;
+    height: 240px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+section:first-child > div > img {
+    width: 320px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+section:first-child > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section:first-child > div:last-child > span {
+    display: block;
+    padding: 5px 10px;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+}
+
+main > section > article {
+    display: grid;
+    row-gap: 40px;
+    margin-bottom: 50px;
+}
+
+article > div {
+    display: flex;
+    align-items: center;
+}
+
+article > div > span {
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 25px;
+    border-right: 1px solid #C4C4C4;
+}
+
+article > div > time {
+    padding-left: 25px;
+    font-style: italic;
+}
+
+article > p {
+    padding-left: 25px;
+    border-left: 1px solid #C4C4C4;
+}
+
+main > section:last-child > div {
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+}
+
+section:last-child > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button:first-child {
+    width: 16px;
+    height: 15px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:last-child > div > div > img {
+    display: block;
+    width: 16px;
+    height: 15px;
+}
+
+button:last-child {
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+ul:not(li > ul) {
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+li > ul {
+    padding-left: 100px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+li > ul > li:nth-child(odd) {
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+li:not(:last-child) > div {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+li > div {
+    display: grid;
+    grid-template-columns: 30px 1fr 100px;
+    grid-template-areas: "img name time"
+                         "img comment time";
+    gap: 10px;
+    padding: 10px;
+}
+
+li > div > img {
+    grid-area: img;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+li > div > span {
+    grid-area: name;
+    font-weight: bold;
+}
+
+li > div > p {
+    grid-area: comment;
+}
+
+li > div > time {
+    grid-area: time;
+    font-style: italic;
+    align-self: flex-end;
+}
