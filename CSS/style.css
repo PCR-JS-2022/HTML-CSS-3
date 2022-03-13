@@ -1,5 +1,5 @@
 * {
-    font-size: 16px;
+    font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  
@@ -21,7 +21,7 @@ body {
 header, footer {
     display: flex;
     width: 100%;
-    height: 45px;
+    height: 40px;
 }
 
 header, #header {
@@ -30,7 +30,7 @@ header, #header {
 
 main {
     display: flex;
-    flex-basis: calc(100vh - 96px);
+    flex-basis: calc(100vh - 86px);
 }
 
 #section1 {
@@ -75,23 +75,106 @@ span {
 #description {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: calc((100vh - 86px) / 2);
     margin: 35px 60px 0 10px;
-    border-bottom: 3px solid rgb(165, 164, 162);
 }
 
 #text {
+    flex: 2 1 auto;
     width: 100%;
     height: 85%;
 }
 
-#properties {
+h2 {
+    margin: 0 0 40px 0;
+}
 
+#properties {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#properties > section > section {
+    display: flex;
+    margin-right: 15%;
+}
+
+#icons {
+    display: flex;
+}
+
+#icons  section  img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    color: crimson;
+}
+
+#add_comment{
+    display: flex;
+}
+
+#add_comment > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
 }
 
 #comments {
     display: flex;
+    flex-direction: column;
     flex-basis: 50%;
+    margin: 0 60px 15px 10px;
+}
+
+#comments ul li, #comments ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#comments ul li ul li:nth-child(odd) {
+    background-color: rgb(165, 164, 162);
+}
+
+#first_ul {
+    margin: 0;
+    padding: 0;
+}
+
+.second_ul {
+    margin-left: 16%;
+}
+
+.comment {
+    display: flex;
+    border-bottom: 2px solid rgb(165, 164, 162);
+    border-top: 2px solid rgb(165, 164, 162);
+}
+
+.comment img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 5px 20px 5px 12px;
+}
+
+.comment_text {
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 100%;
+}
+
+.header_comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_comment :nth-child(1n+1) {
+    margin: 10px 5px 0 0;
 }
 
 footer, #footer {
