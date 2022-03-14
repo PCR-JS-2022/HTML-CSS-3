@@ -4,11 +4,27 @@
 }
 
 body {
-    padding: 40px 0;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
 }
 
-body > main {
+body > div:first-child {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+header {
+    background-color: #0088BB;
+    padding: 10px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+body > div > main {
     border-top: 1px solid #C4C4C4;
     border-bottom: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -16,6 +32,7 @@ body > main {
     display: grid;
     grid-template-columns: 320px 1fr;
     column-gap: 50px;
+    flex: 1 1 auto;
 }
 
 section:first-child > div:first-child {
@@ -161,4 +178,18 @@ li > div > time {
     grid-area: time;
     font-style: italic;
     align-self: flex-end;
+}
+
+footer {
+    background-color: #0088BB;
+    padding: 20px 30px;
+}
+
+footer p {
+    text-align: right;
+}
+
+footer span {
+    font-weight: bold;
+    text-decoration: underline;
 }
