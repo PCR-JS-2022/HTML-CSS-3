@@ -14,15 +14,16 @@ body {
     padding: 0;
     border-left: 3px solid rgb(165, 164, 162);
     border-right: 3px solid rgb(165, 164, 162);
-    background-color: rgb(226, 223, 218);
+    background-color: rgb(243, 221, 188);
 }
 
 header, footer {
     display: flex;
     width: 100%;
-    height: 40px;
+    height: 50px;
     justify-content: center;
     align-items: center;
+    background-color: rgb(195, 252, 212);
 }
 
 header, #header {
@@ -35,7 +36,7 @@ h1 {
 
 main {
     display: flex;
-    flex-basis: calc(100vh - 86px);
+    flex-basis: calc(100vh - 106px);
     font-size: 15px;
 }
 
@@ -65,7 +66,6 @@ img{
 figcaption {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 span {
@@ -81,7 +81,7 @@ span {
 #description {
     display: flex;
     flex-direction: column;
-    flex-basis: calc((100vh - 86px) / 2);
+    flex-basis: calc((100vh - 106px) / 2);
     margin: 35px 60px 0 10px;
 }
 
@@ -124,7 +124,6 @@ h4 {
     width: 20px;
     height: 20px;
     margin: 0;
-    color: crimson;
 }
 
 #add_comment{
@@ -149,8 +148,9 @@ h4 {
     flex-direction: column;
 }
 
-#comments ul li ul li:nth-child(odd) {
-    background-color: rgb(165, 164, 162);
+#comments ul li ul li:nth-child(odd){
+    background-color: rgb(227, 235, 229); 
+    border-radius: 15px;
 }
 
 #first_ul {
@@ -164,8 +164,8 @@ h4 {
 
 .comment {
     display: flex;
-    border-bottom: 2px solid rgb(165, 164, 162);
-    border-top: 2px solid rgb(165, 164, 162);
+    border: 2px solid rgb(165, 164, 162);
+    border-radius: 15px;
 }
 
 .comment img {
@@ -185,6 +185,10 @@ h4 {
 .header_comment {
     display: flex;
     justify-content: space-between;
+}
+
+.header_comment :nth-child(2){
+    font-size: 10px;
 }
 
 .header_comment :nth-child(1n+1) {
