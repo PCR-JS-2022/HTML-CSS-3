@@ -1,0 +1,189 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #202020;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header,
+footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: rgb(228, 228, 228);
+}
+
+h1,
+h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  font-size: 1.5rem;
+}
+
+main,
+main > div > section,
+main > article section:nth-child(2) div,
+main > article section:nth-child(2) button,
+main > article section:nth-child(2),
+li div div,
+li section {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main > div,
+li div,
+main > article {
+  display: flex;
+  flex-direction: column;
+}
+
+main > div {
+  flex: 25%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: dashed #202020 2px;
+}
+
+main > div > section {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main > div span {
+  display: inline-block;
+  min-width: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  color: rgb(20, 20, 20);
+  border: solid rgb(20, 20, 20) 1px;
+  border-radius: 15px;
+  font-size: 0.75em;
+  text-align: center;
+  vertical-align: auto;
+}
+
+main > div span:hover,
+main > div span:hover * {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  cursor: pointer;
+}
+
+figure {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  width: 320px;
+  height: 240px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+main > article {
+  flex: 75%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main > article div {
+  margin-bottom: 10px;
+}
+
+main > article section:nth-child(1) {
+  flex: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main > article section:nth-child(2) {
+  flex: 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: solid rgb(207, 207, 207) 2px;
+}
+
+
+main > article section:nth-child(2) button {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 20px;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  font-size: 1em;
+}
+
+main > article section:nth-child(2) button object {
+  margin-right: 8px;
+}
+
+main > article section:nth-child(2) button:hover,
+main > article section:nth-child(2) button:hover * {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+}
+
+main > article section:nth-child(3) {
+  flex: 65%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li ul {
+  margin-left: 80px;
+}
+
+li {
+  font-size: 0.8rem;
+}
+
+li h2 {
+  font-size: 1rem;
+}
+
+li time,
+li figure {
+  margin-right: 15px;
+}
+
+li section {
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: solid rgb(207, 207, 207) 2px;
+}
+
+li li:nth-child(odd) section {
+  background-color: rgb(241, 241, 241);
+}
+
+/*Убираем нижнюю границу у полседнего ответа на комментарий*/
+li li:last-child section {
+  border: none;
+}
+
+/*Оставляем верхнюю границу у всех комментариев(не ответов) кроме первого*/
+li:not(li li, li:first-child) {
+  border-top: solid rgb(207, 207, 207) 2px;
+}
+
+li section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
