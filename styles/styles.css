@@ -49,7 +49,6 @@ main section > div:first-child div {
   width: 320px;
 }
 
-
 main section > div:first-child div p {
   padding: 10px 20px;
   background-color: var(--grey-color);
@@ -113,22 +112,38 @@ main section > div:nth-child(2) > div:nth-child(3) p {
   margin: 5px 0;
 }
 
-main section > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(2){
+main
+  section
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > div
+  > div:nth-child(2) {
   margin-left: 10px;
   width: 60%;
 }
 
-main section > div:nth-child(2) > div:nth-child(3) > div > div:not(:first-child) {
+main
+  section
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > div:not(:first-child) {
   margin-left: 20%;
 }
 
-main section > div:nth-child(2) > div:nth-child(3) > div > div:not(:first-child):nth-child(even) {
-  background: #C4C4C433;
+main
+  section
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div
+  > div:not(:first-child):nth-child(even) {
+  background: #c4c4c433;
   border-top: none;
   border-bottom: none;
 }
 
-footer{
+footer {
   min-height: 30px;
   border-top: var(--border-grey);
 }
