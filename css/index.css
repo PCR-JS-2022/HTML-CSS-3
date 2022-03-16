@@ -113,7 +113,6 @@ main > article section:nth-child(2) {
   border-bottom: solid rgb(207, 207, 207) 2px;
 }
 
-
 main > article section:nth-child(2) button {
   justify-content: space-evenly;
   align-items: center;
@@ -132,6 +131,7 @@ main > article section:nth-child(2) button:hover,
 main > article section:nth-child(2) button:hover * {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
     brightness(104%) contrast(97%);
+  cursor: pointer;
 }
 
 main > article section:nth-child(3) {
