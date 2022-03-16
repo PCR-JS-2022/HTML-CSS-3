@@ -96,11 +96,11 @@ h2 {
     margin: 0 0 40px 0;
 }
 
-aside > div > section > div > section {
+section > div > section {
     margin-right: 15%;
 }
 
-aside  div section div section img {
+section img {
     width: 20px;
     height: 20px;
 }
@@ -118,21 +118,22 @@ li::marker {
     color: rgb(243, 221, 188);
 }
 
-ul > li > ul > li:nth-child(odd){
+li > ul > li:nth-child(odd){
     background-color: rgb(227, 235, 229); 
     border-radius: 15px;
 }
 
 aside > div > ul {
     padding: 0;
+    margin-bottom: 15px;
 }
 
-aside > div > ul > li > ul {
+ul > li > ul {
     margin-left: 16%;
 }
 
-aside > div > ul > li > div,
-aside > div > ul > li > ul > li > div {
+ul > li > div,
+li > ul > li > div {
     border: 2px solid rgb(165, 164, 162);
     border-radius: 15px;
 }
@@ -145,11 +146,11 @@ div > img {
     margin: 5px 20px 5px 12px;
 }
 
-li > div > div > div > p:last-child {
+div > div > div > p:last-child {
     font-size: 12px;
 }
 
-li > div > div > div:nth-child(1n+1),
+div > div > div:nth-child(1n+1),
 div > div {
     margin: 0 7px 0 0;
 }
@@ -159,6 +160,6 @@ div > p {
     margin-bottom: 10px;
 }
 
-footer, #footer {
+footer{
     border-top: 3px solid rgb(165, 164, 162);
 }
