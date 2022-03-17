@@ -94,7 +94,7 @@ main > section:nth-child(1) > article {
   padding: 30px 30px;
 }
 
-main > section:nth-child(1) > article > figure {
+main > section:nth-child(1) figure {
   width: 320px;
   height: 240px;
 }
@@ -110,7 +110,6 @@ main > section:nth-child(1) > article > ul {
 
 main > section:nth-child(1) > article > ul > li {
   padding-right: 12px;
-
   border-radius: 15px;
   font-size: 1rem;
   text-align: center;
@@ -118,59 +117,56 @@ main > section:nth-child(1) > article > ul > li {
   transition: 0.5s;
 }
 
-main > section:nth-child(1) > article > ul > li:hover {
+section:nth-child(1) > article > ul > li:hover {
   letter-spacing: 2px;
 }
 
-main > section:nth-child(2) {
+section:nth-child(2) {
   width: 90%;
 }
 
-main > section:nth-child(2) > article:nth-child(1) {
+section:nth-child(2) > article:nth-child(1) {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
   padding: 30px 30px;
 }
 
-main > section:nth-child(2) > article:nth-child(1) > ul > li {
+section:nth-child(2) > article:nth-child(1) > ul > li {
   display: flex;
   padding-bottom: 28px;
 }
 
-main > section:nth-child(2) > article:nth-child(1) > ul > li > p {
+article:nth-child(1) > ul > li > p {
   padding-right: 30px;
 }
 
-main > section:nth-child(2) > article:nth-child(2) {
+article:nth-child(2) {
   display: flex;
   padding: 10px 30px;
   justify-content: space-between;
 }
 
-main > section:nth-child(2) > article:nth-child(2) > ul:nth-child(1) {
+article:nth-child(2) > ul:nth-child(1) {
   display: flex;
   justify-content: space-between;
   width: 170px;
 }
 
-main > section:nth-child(2) > article:nth-child(2) > ul:nth-child(1) > li {
+article:nth-child(2) > ul:nth-child(1) > li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 65px;
 }
 
-main > section:nth-child(2) > article:nth-child(2) > ul:nth-child(2) > li > a {
+article:nth-child(2) > ul:nth-child(2) a {
   transition: ease-in-out 0.2s;
 }
 
-main
-  > section:nth-child(2)
-  > article:nth-child(2)
+article:nth-child(2)
   > ul:nth-child(2)
-  > li
-  > a:hover {
+  a:hover {
   transition: ease-in-out 0.2s;
   color: #0088bb;
   border-radius: 25px;
@@ -183,7 +179,7 @@ button > img {
   height: 25px;
 }
 
-main > section:nth-child(2) > article:nth-child(3) {
+article:nth-child(3) {
   margin: 30px 30px;
 }
 
@@ -191,8 +187,7 @@ main > section:nth-child(2) > article:nth-child(3) > ul {
   margin-bottom: 20px;
 }
 
-main > section:nth-child(2) > article:nth-child(3) > ul > li > div,
-main > section:nth-child(2) > article:nth-child(3) > ul > li > ul > li > div {
+article:nth-child(3) div {
   display: flex;
   align-items: center;
   border-top: 1px solid lightgray;
@@ -200,47 +195,21 @@ main > section:nth-child(2) > article:nth-child(3) > ul > li > ul > li > div {
   padding: 10px 20px;
 }
 
-main > section:nth-child(2) > article:nth-child(3) > ul > li > div > figure,
-main
-  > section:nth-child(2)
-  > article:nth-child(3)
-  > ul
-  > li
-  > ul
-  > li
-  > div
-  > figure {
+article:nth-child(3) figure {
   width: 100px;
   padding-right: 30px;
 }
 
-main
-  > section:nth-child(2)
-  > article:nth-child(3)
-  > ul
-  > li
-  > div
-  > figure
-  > img,
-main
-  > section:nth-child(2)
-  > article:nth-child(3)
-  > ul
-  > li
-  > ul
-  > li
-  > div
-  > figure
-  > img {
+article:nth-child(3) img {
   border-radius: 50%;
 }
 
-main > section:nth-child(2) > article:nth-child(3) > ul > li > ul {
+article:nth-child(3) > ul > li > ul {
   margin-left: 150px;
 }
 
-main > section:nth-child(2) > article:nth-child(3) > ul > li > ul > li:nth-child(odd) {
-    background-color: lightgray;
+article:nth-child(3) > ul > li > ul > li:nth-child(odd) {
+  background-color: lightgray;
 }
 
 footer {
