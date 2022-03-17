@@ -21,15 +21,17 @@ main {
 html {
     height: 100%;
 }
-main > div {
+mark {
     width: 30%;
+    background-color: #fff;
 }
-main > div > div {
+mark > div {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-main > div > img {
+mark > img {
     height: 240px;
     width: 320px;
     display: block;
@@ -55,42 +57,45 @@ section > div:nth-child(1) > h2 {
 section > div:nth-child(2){
     gap: 10px;
     display: flex;
+    padding: auto 0;
 }
 section > div:nth-child(2) > img {
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 section > div:nth-child(2) > button {
     margin-left: auto;
+    cursor: pointer;
 }
-section > div:nth-child(3) > div,
-section > div:nth-child(3) > div:nth-child(2) > div > div {
+aside, 
+section > div:nth-child(3) {
     border-top: 1px solid #E2E2E2;
     border-bottom: 1px solid #E2E2E2;
 }
-section > div:nth-child(3) > div > div,
-section > div:nth-child(3) > div:nth-child(2) > div > div {
+aside {
     display: inline-flex;
 }
-section > div:nth-child(3) > div > div > div > *,
-section > div:nth-child(3) > div:nth-child(2) > div > div > div > * {
+aside > div > * {
     margin: 0;
 }
-section > div:nth-child(3) > div > div > img,
-section > div:nth-child(3) > div:nth-child(2) > div > div > img {
+aside > img {
     border-radius: 50%;
     height: 40px;
     width: 40px;
     margin: 10px;
 }
-section > div:nth-child(3) > div:nth-child(2) > div {
+details > article {
     display: block;
     margin-left: 10%;
     width: 90%;
 }
-section > div:nth-child(3) > div:nth-child(2) > div > div {
+details > article > aside {
     width: 100%;
 }
-section > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(2n+1) {
+details > article > aside:nth-child(2n+1) {
     background-color:rgb(240, 240, 240);
+}
+b {
+   margin: auto 0;
 }
