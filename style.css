@@ -42,7 +42,7 @@ a {
     padding: 20px;
     margin: 5px;
 } 
-section{
+section {
     width: 70%;
     padding: 1em;
 }
@@ -60,7 +60,7 @@ section > div:nth-child(2) > img {
     height: 24px;
     width: 24px;
 }
-section > div:nth-child(2) > button{
+section > div:nth-child(2) > button {
     margin-left: auto;
 }
 section > div:nth-child(3) > div,
@@ -73,11 +73,11 @@ section > div:nth-child(3) > div:nth-child(2) > div > div {
     display: inline-flex;
 }
 section > div:nth-child(3) > div > div > div > *,
-section > div:nth-child(3) > div:nth-child(2) > div > div > div > *  {
+section > div:nth-child(3) > div:nth-child(2) > div > div > div > * {
     margin: 0;
 }
 section > div:nth-child(3) > div > div > img,
-section > div:nth-child(3) > div:nth-child(2) > div > div > img{
+section > div:nth-child(3) > div:nth-child(2) > div > div > img {
     border-radius: 50%;
     height: 40px;
     width: 40px;
