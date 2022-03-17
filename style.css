@@ -54,9 +54,7 @@ a {
     float:left;
 }
 
-section > div:nth-child(1) {
 
-}
 
 section > div:nth-child(2) {
     display: flex;
@@ -80,9 +78,7 @@ section > div:nth-child(3) > article > div > div > img {
   margin: 0.5em;
 }
 
-section > div:nth-child(3) > div{
-    
-}
+
 
 section > div:nth-child(3) > div > div,
 section > div:nth-child(3) > article > div > div {
