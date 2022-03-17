@@ -1,0 +1,145 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, footer {
+    height: 40px;
+}
+
+header {
+    border-bottom: 1px solid #C4C4C4;
+}
+
+footer {
+    border-top: 1px solid #C4C4C4;
+}
+
+main {
+    padding: 24px 45px 0px 45px;
+    margin: 0;
+    display: flex;
+}
+
+div li img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+main > div {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 24px;
+    
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+section > article > span {
+    margin-bottom: 10px;
+}
+
+section > article > span:nth-child(4) {
+    margin-bottom: 50px;
+}
+
+section > div > button {
+    outline: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+main > div:last-child div > span {
+    margin-right: 20px;
+}
+
+main > div:last-child > div:first-child img {
+    width: 20px;
+    height: 20px;
+}
+
+section > div > button:last-child {
+    margin-left: 800px;
+}
+
+section > div {
+    margin-bottom: 20px;
+}
+
+main > div:nth-child(1) {
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+
+main > div > img {
+    width: 320px;
+    height: 240px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+}
+
+ul { 
+    padding-top: 10px;
+    list-style: none;
+}
+
+section ul:not(:nth-child(2)) {
+    border-top: 1px solid #C4C4C4;
+}
+
+li > ul li {
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 20px;
+}
+
+li section {
+   display: inline-flex; 
+}
+
+li > section > div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding-top: 7px;
+}
+
+li span {
+    padding: 2px;
+}
+
+li > ul {
+    margin-left: 300px;
+}
+
+li > ul > li:nth-child(odd) {
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+main > div:first-child {
+    width: 320px;
+}
+
+main > div:first-child section {
+    text-align: center;
+}
+
+section > a {
+    display: inline-block;
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 20px;
+    /* margin-right: 10px; */
+    margin-bottom: 10px;
+    padding: 7px;
+    text-decoration: none;
+}
