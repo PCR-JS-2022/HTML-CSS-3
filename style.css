@@ -22,19 +22,19 @@ img {
     margin: 40px;
 }
 
-.header-text {
+header>h1 {
     margin-top: 0;
     padding-top: 10px;
     text-align: center;
     font-size: 25px;
 }
 
-.card {
+div>ar {
     padding: 10px;
     width: 400px;
 }
 
-.content {
+body>div {
     display: flex;
 }
 
@@ -43,49 +43,55 @@ main {
     width: 100%;
 }
 
-.information {
+article+section {
     margin-top: 40px;
 }
 
-.card-info .comment-list {
-    padding: 25px 0 0 25px;
-}
-
-.tag-container {
+article>div {
     display: flex;
     flex-wrap: wrap;
     width: auto;
     margin-left: 40px;
 }
 
-.tag-container>div {
+article>div>div {
     background-color: rgb(202, 197, 197);
     margin: 10px;
     padding: 3px;
 }
 
-.functional-bar {
+section:nth-last-child() {
     margin-top: 60px;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgb(194, 189, 189);
 }
 
-i {
-    padding-top: 18px;
-    color: gray;
+section:last-child {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(194, 189, 189);
 }
 
-.counter-bar {
+i {
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 18px;
+}
+
+section>div:first-child {
     display: flex;
     flex-direction: row;
 }
 
-.count {
-    margin: 18px 50px 20px 10px;
+h3 {
+    margin: 20px 50px 20px 10px;
 }
 
 button {
+    padding: 0;
+    margin: 0;
     border: 0;
     background-color: white;
 }
@@ -96,7 +102,7 @@ div>ul:first-child {
     margin-top: 0;
 }
 
-.comment-button {
+section>div:last-child {
     padding-top: 20px;
     margin-left: auto;
 }
