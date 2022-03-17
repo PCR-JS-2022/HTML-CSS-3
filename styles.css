@@ -1,0 +1,135 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    --main-bg-color: white;
+    --border-color: rgb(138, 138, 138);
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+
+header, footer {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+
+}
+
+header {
+    margin: 0;
+}
+
+footer {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 1% 2.5%;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+section {
+    margin: 0 2.5% 0 2.5%;
+}
+
+figure {
+    width: 320px;
+    margin: 0;
+}
+
+section>figure img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+}
+
+figcaption aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+
+figcaption>aside a {
+    display: block;
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    background-color: rgb(197, 197, 197);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+figcaption>aside a:hover {
+    background-color: var(--border-color);
+    color: var(--main-bg-color);
+}
+
+section>p:last-of-type {
+    margin-bottom: 10%;
+}
+
+button {
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+    padding: 0;
+    border: 0;
+}
+
+button>i:hover {
+    background-color: var(--main-bg-color);
+    filter: invert(100%);
+}
+
+button:last-of-type {
+    float: right;
+    padding: 0 5px;
+}
+
+button:last-of-type:hover {
+    outline: auto;
+}
+
+i {
+    font-style: normal;
+    border-radius: 50%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    clear: right;
+}
+
+ul img {
+    height: 75px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+li {
+    padding: 5px;
+}
+
+section>ul>li {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+li figure {
+    display: flex;
+    width: auto;
+}
+
+ul ul {
+    padding-left: 200px;
+}
+
+ul ul>li:nth-child(odd) {
+    background-color: rgb(197, 197, 197);
+}
