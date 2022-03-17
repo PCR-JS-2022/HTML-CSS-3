@@ -130,7 +130,8 @@ main section:nth-child(2) > div:last-child div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 main section:nth-child(2) > div:last-child div p{
