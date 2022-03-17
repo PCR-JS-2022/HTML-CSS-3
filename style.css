@@ -29,11 +29,6 @@ header>h1 {
     font-size: 25px;
 }
 
-div>ar {
-    padding: 10px;
-    width: 400px;
-}
-
 body>div {
     display: flex;
 }
@@ -54,7 +49,7 @@ article>div {
     margin-left: 40px;
 }
 
-article>div>div {
+article>div>span {
     background-color: rgb(202, 197, 197);
     margin: 10px;
     padding: 3px;
