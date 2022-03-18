@@ -68,34 +68,45 @@ section > div:nth-child(2) > button {
     margin-left: auto;
     cursor: pointer;
 }
-aside, 
-section > div:nth-child(3) {
+article, 
+div > div:nth-child(3) {
     border-top: 1px solid #E2E2E2;
     border-bottom: 1px solid #E2E2E2;
 }
-aside {
+article {
     display: inline-flex;
+    flex-direction: column;
+    width: 100%;
 }
-aside > div > * {
+article > div > * {
     margin: 0;
 }
-aside > img {
+article > img {
     border-radius: 50%;
     height: 40px;
     width: 40px;
     margin: 10px;
 }
-details > article {
-    display: block;
+article > div > article {
+    display: flex;
     margin-left: 10%;
     width: 90%;
+    flex-direction: row;
 }
-details > article > aside {
+div > article {
     width: 100%;
 }
-details > article > aside:nth-child(2n+1) {
+article > div > article:nth-child(2n+1)  {
     background-color:rgb(240, 240, 240);
 }
 b {
    margin: auto 0;
+}
+article > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+article > article {
+    flex-direction: row;
 }
