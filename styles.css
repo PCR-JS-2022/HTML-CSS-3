@@ -1,0 +1,138 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 35px;
+    margin: 0 0 0 25px;
+    vertical-align: center;
+}
+
+main {
+    padding: 65px 10% 10px;
+}
+
+article ul > li {
+    list-style: none;
+    display: flex;
+    padding: 8px;
+    gap: 10px;
+    border-bottom: 2px solid #e3e3e3;
+    border-top: 2px solid #e3e3e3;
+    align-items: center;
+}
+
+ul > li img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+ul > li span {
+    font-size: smaller;
+}
+
+ul > ul > li:last-child {
+    border: none;
+}
+
+ul > ul > li:first-child {
+    border: none;
+}
+
+ul > ul > li {
+    margin-left: 150px;
+}
+
+ul > ul > li:nth-of-type(odd) {
+    background: #eeeeee;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 320px 1fr 120px;
+    grid-template-rows: 200px 25px 1fr;
+    grid-template-areas:
+            "photo info info"
+            "photo actions add_comment"
+            "tags comments comments";
+    row-gap: 20px;
+    column-gap: 60px;
+}
+
+article > img {
+    grid-area: photo;
+    width: 320px;
+    height: 240px;
+    border-radius: 3px;
+}
+
+article > img + div {
+    grid-area: info;
+}
+
+article > img + div > p {
+    margin: 0 0 20px 0;
+}
+
+article > span {
+    display: flex;
+    flex-direction: column;
+    grid-area: tags;
+}
+
+article > span span {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+article > span span span {
+    background: rgba(154, 159, 158, 0.20);
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+
+article > span + div {
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+}
+
+article > span + div > span {
+    padding-left: 8px;
+    margin-right: 20px;
+}
+
+article > button {
+    cursor: pointer;
+    font-size: large;
+    background: transparent;
+    border: none;
+    grid-area: add_comment;
+}
+
+article > div > button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    grid-area: add_comment;
+}
+
+article ul {
+    margin: 0;
+    padding: 0;
+    grid-area: comments;
+}
